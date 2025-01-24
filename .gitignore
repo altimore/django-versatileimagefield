@@ -50,3 +50,4 @@ __sized__/*
 
 .tox
 .idea
+.vscode

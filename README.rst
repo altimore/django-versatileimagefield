@@ -63,6 +63,15 @@ Code
 
 ``django-versatileimagefield`` is hosted on `github <https://github.com/WGBH/django-versatileimagefield>`_.
 
+Installation
+============
+
+To install the package, use Poetry:
+
+.. code-block:: bash
+
+    poetry add django-versatileimagefield
+
 Running Tests
 =============
 
@@ -98,3 +107,12 @@ Then run this command, substituting ``{tox-env}`` with the environment you want 
 .. code-block:: bash
 
    $ tox -e {tox-env}
+
+Development
+===========
+
+To install development dependencies, use Poetry:
+
+.. code-block:: bash
+
+    poetry install
