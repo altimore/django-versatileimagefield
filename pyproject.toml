@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "django-versatileimagefield"
+version = "3.1.2"
+description = "A drop-in replacement for django's ImageField that provides a flexible, intuitive and easily-extensible interface for creating new images from the one assigned to the field."
+authors = ["Jonathan Ellenberger <jonathan_ellenberger@wgbh.org>"]
+license = "MIT"
+homepage = "http://github.com/respondcreate/django-versatileimagefield/"
+readme = "README.rst"
+keywords = ["django"]
+packages = [{ include = "versatileimagefield" }]
+# packages = [
+#   { include = [
+#     "README.rst",
+#     "LICENSE",
+#     "versatileimagefield/static/*.css",
+#     "versatileimagefield/static/*.js",
+#     "versatileimagefield/templates/*.html",
+#   ] },
+# ]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+Pillow = ">=6.2.0"
+python-magic = ">=0.4.22,<1.0.0"
+Django = ">=3.0"
+commitizen = ">=3.31.0"
+
+[tool.poetry.dev-dependencies]
+tox = "^3.24.4"
+pytest = "^6.2.5"
+pytest-django = "^4.4.0"
+coverage = "^5.5"
+Pillow = ">=6.2.0"
+Sphinx = "==1.2.3"
+coveralls = "==3.0.1"
+djangorestframework = "==3.10.3"
+flake8 = "==2.2.5"
+python-magic = "==0.4.22"
+requests = "==2.5.1"
+sphinx-rtd-theme = "==0.1.6"
+testfixtures = "==6.17.1"
+
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "semver2"
+version_provider = "poetry"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
